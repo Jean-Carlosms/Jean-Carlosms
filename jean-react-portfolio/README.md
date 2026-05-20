@@ -23,9 +23,7 @@
   <img src="https://img.shields.io/badge/IIoT-Data%20Acquisition-F97316?style=for-the-badge" alt="IIoT" />
 </p>
 
-Mechatronics Engineer focused on Industrial Automation, Data-Driven Engineering, IIoT, Robotics and Manufacturing Systems.
-
-I connect engineering, software, data and automation to build practical tools for industrial and R&D environments. My background combines manufacturing engineering, mechanical design, industrial automation, dashboards, internal systems and process improvement.
+I am a Mechatronics Engineer focused on Industrial Automation, Data-Driven Engineering, IIoT, Robotics and Manufacturing Systems. My work connects engineering, software, data and automation to build practical tools for industrial and R&D environments.
 
 ---
 
@@ -37,15 +35,15 @@ Python Automation         IIoT and Smart Manufacturing   Power Platform
 Robotics and ROS 2        Process Improvement            Engineering Systems
 ```
 
-## Technical Stack
+## Engineering Stack
 
 | Area | Tools and Concepts |
 | --- | --- |
-| Industrial Automation | PLC Siemens, PLC Rockwell, TIA Portal, Modbus, Profibus, EtherNet/IP, instrumentation |
-| Software and Data | Python, SQL, Flask, Node.js, Express, OCR, web scraping, dashboards |
-| Digital Tools | Power BI, Power Apps, Power Automate, Excel automation, internal tools |
-| Robotics and AI | ROS 2, Gazebo, RViz, URDF, OpenCV, YOLO, Scikit-learn, machine learning |
-| Engineering | BOM, SolidWorks, Autodesk Inventor, MS Project, Lean Manufacturing, technical documentation |
+| Automation | PLC Siemens, PLC Rockwell, TIA Portal, Modbus, Profibus, EtherNet/IP, instrumentation |
+| Data and Software | Python, SQL, Flask, Node.js, dashboards, OCR, web scraping, data processing |
+| Digital Tools | Power BI, Power Apps, Power Automate, Excel automation, internal systems |
+| Robotics and AI | ROS 2, Gazebo, RViz, URDF, OpenCV, YOLO, machine learning |
+| Manufacturing | BOM, Lean Manufacturing, MS Project, process improvement, technical documentation |
 
 ## Featured Projects
 
@@ -90,17 +88,6 @@ Robotics and ROS 2        Process Improvement            Engineering Systems
 
 </details>
 
-## Education
-
-| Program | Institution |
-| --- | --- |
-| MBA in Project Management | USP/Esalq |
-| Postgraduate Degree in Data Science | Facens |
-| Postgraduate Degree in Industrial Automation Engineering | Facens |
-| Postgraduate Degree in Tax Audit | Gran Faculdade |
-| Bachelor's Degree in Mechatronics Engineering | Facens |
-| Automotive Mechanical Technician | SENAI |
-
 ## GitHub Overview
 
 <p align="center">
@@ -112,11 +99,18 @@ Robotics and ROS 2        Process Improvement            Engineering Systems
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jean-Carlosms&theme=tokyo-night&hide_border=true&area=true" alt="GitHub activity graph" />
 </p>
 
-## Career Direction
+## Portfolio App
 
-I am building my career at the intersection of engineering, automation, data and intelligent systems.
+This repository contains a React + Vite portfolio built to present engineering projects, technical skills, academic background and professional positioning.
 
-My goal is to develop and implement practical solutions that improve industrial processes, increase reliability, support engineering decisions and connect physical systems with digital tools.
+```bash
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+```
 
 ## Contact
 
@@ -131,5 +125,3 @@ My goal is to develop and implement practical solutions that improve industrial 
 <p align="center">
   Engineering solutions at the intersection of automation, data and intelligent systems.
 </p>
-
-_Last updated: 2026-05-20_
