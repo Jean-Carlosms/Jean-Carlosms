@@ -1011,10 +1011,18 @@ FILES["README.md"] = """# Jean Carlos Meira da Silva
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Power%20Platform-Engineering%20Tools-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Platform" />
-  <img src="https://img.shields.io/badge/ROS%202-Robotics-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS 2" />
-  <img src="https://img.shields.io/badge/IIoT-Data%20Acquisition-F97316?style=for-the-badge" alt="IIoT" />
+  <a href="https://github.com/Jean-Carlosms">
+    <img src="https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  </a>
+  <a href="https://github.com/Jean-Carlosms">
+    <img src="https://img.shields.io/badge/Power%20Platform-Engineering%20Tools-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Platform" />
+  </a>
+  <a href="https://github.com/Jean-Carlosms">
+    <img src="https://img.shields.io/badge/ROS%202-Robotics-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS 2" />
+  </a>
+  <a href="https://github.com/Jean-Carlosms">
+    <img src="https://img.shields.io/badge/IIoT-Data%20Acquisition-F97316?style=for-the-badge" alt="IIoT" />
+  </a>
 </p>
 
 I am a Mechatronics Engineer focused on Industrial Automation, Data-Driven Engineering, IIoT, Robotics and Manufacturing Systems. My work connects engineering, software, data and automation to build practical tools for industrial and R&D environments.
