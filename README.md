@@ -104,12 +104,18 @@ Robotics and ROS 2        Process Improvement            Engineering Systems
 ## GitHub Overview
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Jean-Carlosms&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Jean's GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jean-Carlosms&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <a href="https://github.com/Jean-Carlosms">
+    <img height="170" src="https://github-readme-stats.vercel.app/api?username=Jean-Carlosms&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Jean's GitHub stats" />
+  </a>
+  <a href="https://github.com/Jean-Carlosms">
+    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jean-Carlosms&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jean-Carlosms&theme=tokyo-night&hide_border=true&area=true" alt="GitHub activity graph" />
+  <a href="https://github.com/Jean-Carlosms">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jean-Carlosms&theme=tokyo-night&hide_border=true&area=true" alt="GitHub activity graph" />
+  </a>
 </p>
 
 ## Career Direction
