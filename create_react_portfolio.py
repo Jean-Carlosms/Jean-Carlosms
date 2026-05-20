@@ -995,7 +995,9 @@ main {
 FILES["README.md"] = """# Jean Carlos Meira da Silva
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=900&lines=Mechatronics+Engineer;Industrial+Automation+%7C+IIoT+%7C+Robotics;Data-Driven+Engineering+for+Manufacturing;Engineering+Systems+and+Digital+Tools" alt="Typing SVG" />
+  <a href="#jean-carlos-meira-da-silva">
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=900&lines=Mechatronics+Engineer;Industrial+Automation+%7C+IIoT+%7C+Robotics;Data-Driven+Engineering+for+Manufacturing;Engineering+Systems+and+Digital+Tools" alt="Typing SVG" />
+  </a>
 </p>
 
 <p align="center">
