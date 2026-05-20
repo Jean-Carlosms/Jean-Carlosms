@@ -1085,19 +1085,22 @@ Robotics and ROS 2        Process Improvement            Engineering Systems
 ## GitHub Overview
 
 <p align="center">
-  <a href="https://github.com/Jean-Carlosms">
-    <img height="170" src="https://github-readme-stats.vercel.app/api?username=Jean-Carlosms&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Jean's GitHub stats" />
+  <a href="https://github.com/Jean-Carlosms?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-Engineering%20Portfolio-181717?style=for-the-badge&logo=github" alt="Repositories" />
+  </a>
+  <a href="https://github.com/Jean-Carlosms?tab=followers">
+    <img src="https://img.shields.io/github/followers/Jean-Carlosms?label=Followers&style=for-the-badge&logo=github&color=0A66C2" alt="GitHub followers" />
   </a>
   <a href="https://github.com/Jean-Carlosms">
-    <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jean-Carlosms&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+    <img src="https://img.shields.io/badge/Profile-Jean--Carlosms-38BDF8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" />
   </a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jean-Carlosms&theme=tokyo-night&hide_border=true&area=true" alt="GitHub activity graph" />
-  </a>
-</p>
+| GitHub Area | Focus |
+| --- | --- |
+| Portfolio repositories | Engineering, automation, data and robotics projects |
+| Main languages | Python, JavaScript, SQL and engineering tooling |
+| Current direction | Manufacturing systems, IIoT, R&D tools and industrial automation |
 
 ## Portfolio App
 
