@@ -16,6 +16,9 @@
   <a href="mailto:jean-carlosms@hotmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
+  <a href="https://jean-carlosms.github.io/Jean-Carlosms/">
+    <img src="https://img.shields.io/badge/Portfolio-GitHub%20Pages-2DD4BF?style=for-the-badge&logo=githubpages&logoColor=111827" alt="Portfolio" />
+  </a>
 </p>
 
 <p align="center">

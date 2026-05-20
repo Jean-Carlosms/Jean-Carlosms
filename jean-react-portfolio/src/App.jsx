@@ -4,18 +4,20 @@
   Database,
   Bot,
   BarChart3,
-  
-  
   Mail,
   ExternalLink,
   Workflow,
-  Gauge,
   Wrench,
   Code2,
   GraduationCap,
   Briefcase,
   ChevronRight,
+  Sparkles,
+  CircuitBoard,
+  RadioTower,
+  GitBranch,
 } from "lucide-react";
+import { useEffect } from "react";
 
 const projects = [
   {
@@ -124,13 +126,26 @@ const timeline = [
   },
 ];
 
+const signals = [
+  { label: "Automation", value: "PLC + IIoT", icon: RadioTower },
+  { label: "Data Flow", value: "Python + SQL", icon: Database },
+  { label: "Robotics", value: "ROS 2", icon: Bot },
+  { label: "Systems", value: "Dashboards", icon: CircuitBoard },
+];
+
+const highlights = [
+  { value: "06+", label: "portfolio directions" },
+  { value: "05", label: "engineering domains" },
+  { value: "24/7", label: "automation mindset" },
+];
+
 function Badge({ children }) {
   return <span className="badge">{children}</span>;
 }
 
 function SectionTitle({ eyebrow, title, description }) {
   return (
-    <div className="section-title">
+    <div className="section-title reveal">
       <span>{eyebrow}</span>
       <h2>{title}</h2>
       {description && <p>{description}</p>}
@@ -139,9 +154,34 @@ function SectionTitle({ eyebrow, title, description }) {
 }
 
 function App() {
+  useEffect(() => {
+    const revealElements = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.18 }
+    );
+
+    revealElements.forEach((element) => observer.observe(element));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <main>
       <header className="hero">
+        <div className="hero-bg" aria-hidden="true">
+          <span className="scan-line"></span>
+          <span className="pulse pulse-one"></span>
+          <span className="pulse pulse-two"></span>
+        </div>
+
         <nav className="navbar">
           <div className="brand">
             <div className="brand-mark">JC</div>
@@ -162,7 +202,7 @@ function App() {
         <section className="hero-grid">
           <div className="hero-content">
             <div className="hero-kicker">
-              <Gauge size={18} />
+              <Sparkles size={18} />
               Industrial Automation &bull; IIoT &bull; Robotics &bull; Manufacturing
             </div>
 
@@ -199,15 +239,42 @@ function App() {
               <Badge>IIoT</Badge>
               <Badge>Data Acquisition</Badge>
             </div>
+
+            <div className="hero-stats" aria-label="Portfolio highlights">
+              {highlights.map((item) => (
+                <div className="stat" key={item.label}>
+                  <strong>{item.value}</strong>
+                  <span>{item.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           <aside className="hero-card">
             <div className="card-glow"></div>
+            <div className="system-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <h3>Professional Positioning</h3>
             <p>
               Manufacturing Engineer &bull; Automation Engineer &bull; Industrial Data &bull;
               R&D &bull; IIoT &bull; Robotics
             </p>
+
+            <div className="signal-list">
+              {signals.map((signal) => {
+                const Icon = signal.icon;
+                return (
+                  <div className="signal-item" key={signal.label}>
+                    <Icon size={20} />
+                    <span>{signal.label}</span>
+                    <strong>{signal.value}</strong>
+                  </div>
+                );
+              })}
+            </div>
 
             <div className="metric-grid">
               <div>
@@ -239,7 +306,7 @@ function App() {
         />
 
         <div className="about-grid">
-          <div className="about-card">
+          <div className="about-card reveal">
             <Wrench size={26} />
             <h3>Engineering Background</h3>
             <p>
@@ -249,7 +316,7 @@ function App() {
             </p>
           </div>
 
-          <div className="about-card">
+          <div className="about-card reveal">
             <Workflow size={26} />
             <h3>Automation Mindset</h3>
             <p>
@@ -258,7 +325,7 @@ function App() {
             </p>
           </div>
 
-          <div className="about-card">
+          <div className="about-card reveal">
             <Code2 size={26} />
             <h3>Digital Tools</h3>
             <p>
@@ -277,8 +344,12 @@ function App() {
         />
 
         <div className="projects-grid">
-          {projects.map((project) => (
-            <article className="project-card" key={project.title}>
+          {projects.map((project, index) => (
+            <article
+              className="project-card reveal"
+              key={project.title}
+              style={{ "--delay": `${index * 80}ms` }}
+            >
               <div className="project-top">
                 <span>{project.category}</span>
                 <BarChart3 size={22} />
@@ -309,10 +380,14 @@ function App() {
         />
 
         <div className="skills-grid">
-          {skills.map((skill) => {
+          {skills.map((skill, index) => {
             const Icon = skill.icon;
             return (
-              <div className="skill-card" key={skill.title}>
+              <div
+                className="skill-card reveal"
+                key={skill.title}
+                style={{ "--delay": `${index * 90}ms` }}
+              >
                 <Icon size={30} />
                 <h3>{skill.title}</h3>
                 <ul>
@@ -334,8 +409,12 @@ function App() {
         />
 
         <div className="timeline">
-          {timeline.map((item) => (
-            <div className="timeline-item" key={item.year}>
+          {timeline.map((item, index) => (
+            <div
+              className="timeline-item reveal"
+              key={item.year}
+              style={{ "--delay": `${index * 90}ms` }}
+            >
               <div className="timeline-year">{item.year}</div>
               <div className="timeline-content">
                 <h3>{item.role}</h3>
@@ -353,7 +432,7 @@ function App() {
         />
 
         <div className="education-grid">
-          <div className="education-card">
+          <div className="education-card reveal">
             <GraduationCap size={28} />
             <h3>Academic Background</h3>
             <ul>
@@ -365,7 +444,7 @@ function App() {
             </ul>
           </div>
 
-          <div className="education-card">
+          <div className="education-card reveal">
             <Briefcase size={28} />
             <h3>Career Direction</h3>
             <p>
@@ -388,7 +467,7 @@ function App() {
 
         <div className="contact-links">
           <a href="https://github.com/Jean-Carlosms" target="_blank" rel="noreferrer">
-            <Code2 size={20} /> GitHub
+            <GitBranch size={20} /> GitHub
           </a>
           <a href="https://www.linkedin.com/in/jeancarlosms" target="_blank" rel="noreferrer">
             <ExternalLink size={20} /> LinkedIn

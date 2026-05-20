@@ -120,7 +120,7 @@ Robotics and ROS 2        Process Improvement            Engineering Systems
 
 ## Portfolio App
 
-This repository contains a React + Vite portfolio built to present engineering projects, technical skills, academic background and professional positioning.
+This repository contains a React + Vite portfolio built to present engineering projects, technical skills, academic background and professional positioning. The app includes animated sections, interactive project cards and a static build ready for GitHub Pages.
 
 ```bash
 npm install
@@ -130,6 +130,15 @@ npm run dev
 ```bash
 npm run build
 ```
+
+### GitHub Pages
+
+The Vite build uses relative asset paths through `base: "./"` in `vite.config.js`, so the generated `dist` folder can be published either from a user site repository or from a project page.
+
+1. Run `npm run build`.
+2. Push the repository to GitHub.
+3. In GitHub, open **Settings > Pages**.
+4. Select the branch/folder that will serve the generated static files.
 
 ## Contact
 
