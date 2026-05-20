@@ -84,7 +84,7 @@ Automation tool designed to monitor funding opportunities, collect public call d
 
 **Main concepts:** Python, Web Scraping, OCR, Data Processing, Automation, Dashboards, Decision Support.
 
-Suggested repository name:
+Repository name:
 
 ```text
 funding-opportunities-monitor
@@ -98,7 +98,7 @@ Internal system concept for project time allocation, effort tracking, governance
 
 **Main concepts:** Node.js, Express, Excel-based persistence, Governance, Audit Trail, Authentication, Project Management.
 
-Suggested repository name:
+Repository name:
 
 ```text
 project-time-allocation-system
