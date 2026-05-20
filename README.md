@@ -112,7 +112,7 @@ Web application concept for managing R&D vehicle reservations, traceability, sch
 
 **Main concepts:** Python, Flask, SQLite, Dashboards, R&D Operations, Vehicle Management, Traceability.
 
-Suggested repository name:
+Repository name:
 
 ```text
 vehicle-traceability-dashboard
@@ -126,7 +126,7 @@ Studies and applications involving computer vision, object detection and machine
 
 **Main concepts:** Python, OpenCV, YOLO, Machine Learning, Data Analysis, Object Detection.
 
-Suggested repository name:
+Repository name:
 
 ```text
 computer-vision-yolo-detection
@@ -140,7 +140,7 @@ Robotics studies involving ROS 2, robot description, simulation, visualization a
 
 **Main concepts:** ROS 2, Gazebo, RViz, URDF, TF, Python, Robotics.
 
-Suggested repository name:
+Repository name:
 
 ```text
 ros2-mobile-robot-simulation
@@ -154,7 +154,7 @@ Repository for industrial automation studies, including PLCs, industrial network
 
 **Main concepts:** PLC, Industrial Networks, Control Systems, Instrumentation, Automation Engineering.
 
-Suggested repository name:
+Repository name:
 
 ```text
 industrial-automation-studies
