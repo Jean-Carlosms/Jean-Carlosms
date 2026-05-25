@@ -1,85 +1,70 @@
-# Technical Skills
+# Core Expertise
 
-## Industrial Automation
+## Automation & Industrial Systems
 
-- PLC Siemens
-- PLC Rockwell / Allen-Bradley
-- TIA Portal
-- Ladder Logic
-- Industrial Networks
-- Modbus
-- Profibus
-- EtherNet/IP
+- PLC
+- Siemens
+- Rockwell / Allen-Bradley
+- Industrial networks
+- PROFIBUS
+- P&ID
 - Instrumentation
 - Sensors
-- Process Control
-- Machine Integration
-- Data Acquisition
+- Control systems
+- IIoT
+- Data acquisition
 
-## Software Development
+## Manufacturing & Process Improvement
+
+- Manufacturing operations
+- Process digitalization
+- R&D operations
+- Traceability workflows
+- BOM preparation
+- Technical documentation
+- Lean Manufacturing
+- Process improvement
+- Project planning
+- Manufacturing support
+
+## Data & Software Engineering
 
 - Python
 - Flask
 - Node.js
 - Express
-- SQL
-- HTML
-- CSS
+- React
 - JavaScript
-- Git and GitHub
-- API integration
-- Automation scripts
-
-## Data and Analytics
-
-- Data analysis with Python
-- Pandas
-- NumPy
-- Scikit-learn
+- SQL
 - Power BI
-- Dashboards
-- Data visualization
-- Data cleaning
-- Machine Learning
-- Predictive analysis
-
-## Power Platform
-
 - Power Apps
 - Power Automate
-- Power BI
-- Business process automation
+- Dashboards
+- Data processing
 - Internal engineering tools
 
-## Engineering Tools
-
-- SolidWorks
-- Autodesk Inventor
-- MS Project
-- BOM creation
-- Technical drawings
-- Manufacturing documentation
-- Project planning
-
-## Robotics and AI
+## Robotics & Intelligent Systems
 
 - ROS 2
-- Gazebo
-- RViz
-- URDF
 - TF
-- OpenCV
-- YOLO
-- Computer Vision
-- Robotics simulation
-- Systems integration
+- URDF
+- RViz
+- Gazebo
+- C++
+- Raspberry Pi
+- Arduino
+- ESP32
+- Sensors
+- Mobile robotics
+- Computer vision
+- Machine learning
 
-## Professional Competencies
+## Project Management & Governance
 
-- Problem solving
-- Lean Manufacturing
-- Process improvement
-- Technical documentation
 - Project management
+- Approval workflows
+- Governance controls
+- Auditability
+- Decision-support reports
 - Cross-functional collaboration
-- Engineering decision support
+- Engineering documentation

@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="#jean-carlos-meira-da-silva">
-    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=900&lines=Mechatronics+Engineer;Industrial+Automation+%7C+IIoT+%7C+Robotics;Data-Driven+Engineering+for+Manufacturing;Engineering+Systems+and+Digital+Tools" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=24&duration=2800&pause=900&color=38BDF8&center=true&vCenter=true&width=900&lines=Mechatronics+Engineer;Industrial+Automation+%7C+Manufacturing+Digitalization;Data+Solutions+%7C+IIoT+%7C+Robotics;Applied+Software+for+Engineering+Systems" alt="Typing SVG" />
   </a>
 </p>
 
@@ -21,124 +21,114 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://img.shields.io/badge/Python-Automation-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  </a>
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://img.shields.io/badge/Power%20Platform-Engineering%20Tools-742774?style=for-the-badge&logo=powerapps&logoColor=white" alt="Power Platform" />
-  </a>
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://img.shields.io/badge/ROS%202-Robotics-22314E?style=for-the-badge&logo=ros&logoColor=white" alt="ROS 2" />
-  </a>
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://img.shields.io/badge/IIoT-Data%20Acquisition-F97316?style=for-the-badge" alt="IIoT" />
-  </a>
-</p>
+Mechatronics Engineer focused on Industrial Automation, Manufacturing Digitalization, Data Solutions, IIoT and Robotics.
 
-Mechatronics Engineer focused on Industrial Automation, Data-Driven Engineering, IIoT, Robotics and Manufacturing Systems.
-
-I connect engineering, software, data and automation to build practical tools for industrial and R&D environments. My background combines manufacturing engineering, mechanical design, industrial automation, dashboards, internal systems and process improvement.
+I build practical engineering solutions that connect automation, data, software and industrial processes to improve traceability, decision-making and operational efficiency.
 
 ---
 
-## Professional Focus
+## About Me
+
+I am a Mechatronics Engineer with a multidisciplinary background in industrial automation, data science, project management and engineering systems. My work focuses on building practical solutions that connect hardware, software, data and industrial operations.
+
+I have experience developing internal tools, dashboards, automation systems and process digitalization projects using Python, Node.js, React, Power Platform and industrial technologies. My professional direction is centered on automation, manufacturing, IIoT, robotics and intelligent systems.
+
+I also maintain a strong self-directed learning routine in automation, robotics, control systems, electronics, data science and software engineering, applying this knowledge in practical engineering projects.
+
+## Target Roles
 
 ```text
-Industrial Automation     Manufacturing Engineering     Data Acquisition
-Python Automation         IIoT and Smart Manufacturing   Power Platform
-Robotics and ROS 2        Process Improvement            Engineering Systems
+Manufacturing Engineer        Automation Engineer
+Data / Automation Engineer    Robotics Engineer
+Industrial Digitalization Engineer
 ```
 
-## Technical Stack
+## Core Expertise
 
 | Area | Tools and Concepts |
 | --- | --- |
-| Industrial Automation | PLC Siemens, PLC Rockwell, TIA Portal, Modbus, Profibus, EtherNet/IP, instrumentation |
-| Software and Data | Python, SQL, Flask, Node.js, Express, OCR, web scraping, dashboards |
-| Digital Tools | Power BI, Power Apps, Power Automate, Excel automation, internal tools |
-| Robotics and AI | ROS 2, Gazebo, RViz, URDF, OpenCV, YOLO, Scikit-learn, machine learning |
-| Engineering | BOM, SolidWorks, Autodesk Inventor, MS Project, Lean Manufacturing, technical documentation |
+| Automation & Industrial Systems | PLC, Siemens, Rockwell, industrial networks, P&ID, instrumentation, control systems |
+| Manufacturing & Process Improvement | Manufacturing operations, traceability, process digitalization, Lean Manufacturing, technical documentation |
+| Data & Software Engineering | Python, Flask, Node.js, React, Power BI, Power Apps, Power Automate, SQL, dashboards |
+| Robotics & Intelligent Systems | ROS 2, C++, Raspberry Pi, Arduino, ESP32, sensors, mobile robotics |
+| Project Management & Governance | Project planning, approval workflows, governance controls, auditability, decision-support reports |
 
-## Featured Projects
+## Selected Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>Funding Opportunities Monitor</h3>
-      <p>Automation tool for monitoring funding opportunities, ranking public calls and generating technical summaries for decision-making.</p>
-      <p><b>Stack:</b> Python, Flask, OCR, Web Scraping, Dashboards</p>
-      <p><b>Impact:</b> Reduced manual monitoring effort and improved visibility for innovation opportunities.</p>
+      <h3>Robo de Fomento</h3>
+      <p>Python/Flask system developed to monitor innovation funding opportunities from public and institutional sources, with automated collection, filtering, ranking, dashboard visualization and one-page report generation.</p>
+      <p><b>Stack:</b> Python, Flask, Web Scraping, Data Processing, Ranking, Dashboard, Automation</p>
     </td>
     <td width="50%" valign="top">
-      <h3>Project Time Allocation System</h3>
-      <p>Internal system concept for time allocation, governance, approval workflows and auditability.</p>
-      <p><b>Stack:</b> Node.js, Express, Excel, Authentication, Governance</p>
-      <p><b>Impact:</b> Improved traceability and control for project effort management.</p>
+      <h3>Apontamento Local</h3>
+      <p>Internal web application for monthly project time allocation, approval workflows, governance controls and auditability, evolved from a Python prototype to a Node.js/Express architecture.</p>
+      <p><b>Stack:</b> Node.js, Express, Excel Persistence, Authentication, CSRF, Governance, Audit Trail</p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>Vehicle Traceability Dashboard</h3>
-      <p>Web application concept for R&D vehicle reservations, chassis selection, scheduling and operational traceability.</p>
-      <p><b>Stack:</b> Python, Flask, SQLite, Dashboards</p>
-      <p><b>Impact:</b> Converted spreadsheet-based control into a structured engineering tool.</p>
+      <h3>R&D Vehicle Tracking</h3>
+      <p>Web application designed to manage R&D vehicle reservations, vehicle registration, chassis/model selection, user allocation and visual reservation timelines.</p>
+      <p><b>Stack:</b> Flask, Python, Data Management, Timeline UI, R&D Operations, Process Digitalization</p>
     </td>
     <td width="50%" valign="top">
-      <h3>ROS 2 Robotics Studies</h3>
-      <p>Robotics studies involving ROS 2, robot description, simulation, visualization and systems integration.</p>
-      <p><b>Stack:</b> ROS 2, Gazebo, RViz, URDF, Python</p>
-      <p><b>Impact:</b> Strengthened the foundation for robotics and intelligent mechatronic systems.</p>
+      <h3>Machine Learning & Computer Vision</h3>
+      <p>Applied projects using Python, Scikit-Learn, OpenCV and YOLO, including classification, clustering, image processing, predictive analysis and model evaluation.</p>
+      <p><b>Stack:</b> Python, Scikit-Learn, OpenCV, YOLO, Machine Learning, Computer Vision</p>
     </td>
   </tr>
 </table>
 
-<details>
-  <summary><b>More project directions</b></summary>
+Additional technical practice areas include ROS 2, mobile robotics, PLCs, industrial networks, instrumentation and control systems. They support the portfolio positioning as structured training and applied practice, while the selected projects above represent the strongest applied systems.
 
-  - Computer Vision and Machine Learning with Python, OpenCV, YOLO and Scikit-learn.
-  - Industrial Automation studies with PLCs, industrial networks, sensors and process control.
-  - Engineering dashboards and internal tools for manufacturing and R&D operations.
-  - Power Platform applications for workflow automation and operational visibility.
+## Professional Experience
 
-</details>
+| Experience | Summary |
+| --- | --- |
+| IEL / Automotive R&D environment | Working on innovation projects, data automation, process digitalization and decision-support dashboards, with focus on internal tools that improve traceability and technical workflows. |
+| FF Equipamentos | Worked on engineering projects involving 3D modeling, BOM preparation, technical documentation, project supervision, manufacturing support and process improvement. |
+| Previous industrial experience | Hands-on experience in the construction and agricultural machinery sector, supporting technical understanding of industrial equipment, maintenance routines and manufacturing environments. |
 
 ## Education
 
 | Program | Institution |
 | --- | --- |
-| MBA in Project Management | USP/Esalq |
-| Postgraduate Degree in Data Science | Facens |
-| Postgraduate Degree in Industrial Automation Engineering | Facens |
+| B.Eng. in Mechatronics Engineering | FACENS |
+| Postgraduate Degree in Industrial Automation Engineering | FACENS |
+| Postgraduate Degree in Data Science | FACENS |
+| MBA in Project Management | USP/ESALQ - ongoing |
 | Postgraduate Degree in Tax Audit | Gran Faculdade |
-| Bachelor's Degree in Mechatronics Engineering | Facens |
-| Automotive Mechanical Technician | SENAI |
 
-## GitHub Overview
+## Selected Certifications & Training
 
-<p align="center">
-  <a href="https://github.com/Jean-Carlosms?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Engineering%20Portfolio-181717?style=for-the-badge&logo=github" alt="Repositories" />
-  </a>
-  <a href="https://github.com/Jean-Carlosms?tab=followers">
-    <img src="https://img.shields.io/github/followers/Jean-Carlosms?label=Followers&style=for-the-badge&logo=github&color=0A66C2" alt="GitHub followers" />
-  </a>
-  <a href="https://github.com/Jean-Carlosms">
-    <img src="https://img.shields.io/badge/Profile-Jean--Carlosms-38BDF8?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" />
-  </a>
-</p>
-
-| GitHub Area | Focus |
+| Area | Training |
 | --- | --- |
-| Portfolio repositories | Engineering, automation, data and robotics projects |
-| Main languages | Python, JavaScript, SQL and engineering tooling |
-| Current direction | Manufacturing systems, IIoT, R&D tools and industrial automation |
+| Robotics & Embedded Systems | ROS 2, TF, URDF, RViz, Gazebo, ROS fundamentals, Raspberry Pi, Arduino, C++ |
+| Industrial Automation | Siemens S7-1200 PLC, TIA Portal with Factory I/O, Rockwell PLC and HMI, industrial networks, PROFIBUS PA, P&ID, EPLAN Electric P8 |
+| Data, AI & Software | Python, Process Control with Python, Power BI, Power Apps, Power Automate, SQL, Flask, Machine Learning, Computer Vision with OpenCV, Statistics with Python |
 
-## Career Direction
+## Current Direction
 
-I am building my career at the intersection of engineering, automation, data and intelligent systems.
+Currently focused on industrial automation, robotics, intelligent systems, data-driven engineering and digital transformation in manufacturing environments. My long-term goal is to combine mechatronics, robotics, AI and industrial systems to build practical automation and intelligent engineering solutions.
 
-My goal is to develop and implement practical solutions that improve industrial processes, increase reliability, support engineering decisions and connect physical systems with digital tools.
+Preparing for graduate-level research in Automation and Robotics, with interest in mobile robotics, reinforcement learning, ROS 2, control systems and intelligent manufacturing.
+
+## Portfolio App
+
+This repository contains a React + Vite portfolio built to present engineering projects, technical skills, academic background and professional positioning.
+
+```bash
+cd jean-react-portfolio
+npm install
+npm run dev
+```
+
+```bash
+npm run build
+```
 
 ## Contact
 
@@ -151,7 +141,5 @@ My goal is to develop and implement practical solutions that improve industrial 
 ---
 
 <p align="center">
-  Engineering solutions at the intersection of automation, data and intelligent systems.
+  Engineering solutions connecting automation, data, software and industrial operations.
 </p>
-
-_Last updated: 2026-05-20_

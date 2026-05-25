@@ -1,155 +1,130 @@
 # Projects Portfolio
 
-This document summarizes the main technical projects that should be highlighted in my GitHub portfolio.
+This document summarizes the applied projects and technical practice areas highlighted in the professional portfolio.
 
 ---
 
-## 1. Funding Opportunities Monitor
+## Selected Applied Projects
 
-**Type:** Automation / Data / Decision Support  
-**Suggested repository:** `funding-opportunities-monitor`
+These projects are presented as the strongest applied systems because they connect software, data, workflow automation, traceability and engineering operations.
 
-### Objective
+---
 
-Create an automated tool to monitor funding opportunities, collect data from public sources, rank relevant calls and generate technical summaries.
+## 1. Robo de Fomento
+
+**Type:** Automation / Data Processing / Decision Support
+
+### Description
+
+Python/Flask system developed to monitor innovation funding opportunities from public and institutional sources. The solution includes automated data collection, filtering, ranking, dashboard visualization and one-page report generation to support decision-making.
 
 ### Technical Highlights
 
-- Python automation
-- Web scraping
-- OCR support
-- Data filtering
-- Ranking by keywords
-- Dashboard and reports
-- Decision support for leadership
+- Python and Flask
+- Web scraping and automated data collection
+- Data filtering and ranking
+- Dashboard visualization
+- One-page report generation
 
 ### Professional Value
 
-This project demonstrates the ability to automate repetitive research tasks, structure unorganized information and generate actionable insights for engineering and innovation management.
+This project demonstrates applied automation, data processing and decision-support reporting for innovation and engineering management.
 
 ---
 
-## 2. Project Time Allocation System
+## 2. Apontamento Local
 
-**Type:** Internal Management System / Governance  
-**Suggested repository:** `project-time-allocation-system`
+**Type:** Internal Web System / Governance / Auditability
 
-### Objective
+### Description
 
-Develop a system to manage monthly project time allocation, approval workflows, governance and auditability.
+Internal web application for monthly project time allocation, approval workflows, governance controls and auditability. The system evolved from a Python prototype to a Node.js/Express architecture due to compliance and maintainability requirements.
 
 ### Technical Highlights
 
-- Node.js
-- Express
+- Node.js and Express
 - Excel-based persistence
 - Authentication
-- Approval workflow
-- User and project management
-- Audit trail
+- CSRF protection
+- Approval workflows
 - Governance controls
+- Audit trail
 
 ### Professional Value
 
-This project demonstrates practical software development applied to project management, compliance, internal controls and operational efficiency.
+This project demonstrates practical software development applied to engineering governance, traceability and operational control.
 
 ---
 
-## 3. Vehicle Traceability Dashboard
+## 3. R&D Vehicle Tracking
 
-**Type:** Web Application / R&D Operations  
-**Suggested repository:** `vehicle-traceability-dashboard`
+**Type:** Web Application / R&D Operations / Process Digitalization
 
-### Objective
+### Description
 
-Create a web application to manage R&D vehicle reservations, traceability and operational visibility.
+Web application designed to manage R&D vehicle reservations, vehicle registration, chassis/model selection, user allocation and visual reservation timelines, replacing spreadsheet-based controls and manual workflows.
 
 ### Technical Highlights
 
-- Python
-- Flask
-- SQLite
-- Vehicle registration
-- Reservation timeline
-- Dashboard
+- Python and Flask
 - Data management
+- Reservation workflows
+- Timeline UI
+- R&D operations
+- Process digitalization
 
 ### Professional Value
 
-This project demonstrates the ability to replace manual spreadsheets with a structured digital system for engineering operations.
+This project demonstrates the ability to convert spreadsheet-based controls into structured engineering workflows.
 
 ---
 
-## 4. Computer Vision and Machine Learning
+## 4. Machine Learning & Computer Vision Projects
 
-**Type:** AI / Engineering Applications  
-**Suggested repository:** `computer-vision-yolo-detection`
+**Type:** Data Science / Computer Vision / Engineering Applications
 
-### Objective
+### Description
 
-Apply computer vision and machine learning techniques to engineering and automation problems.
+Applied machine learning and computer vision projects using Python, Scikit-Learn, OpenCV and YOLO, including classification, clustering, image processing, predictive analysis and model evaluation.
 
 ### Technical Highlights
 
 - Python
+- Scikit-Learn
 - OpenCV
 - YOLO
-- Scikit-learn
-- Dataset processing
-- Object detection
-- Model training and evaluation
+- Classification and clustering
+- Image processing
+- Predictive analysis
+- Model evaluation
 
 ### Professional Value
 
-This project demonstrates technical knowledge in applied AI, image processing and data-driven engineering.
+This project area connects data science and perception technologies to engineering and automation applications.
 
 ---
 
-## 5. ROS 2 and Robotics
+## Technical Practice Areas
 
-**Type:** Robotics / Simulation / Systems Integration  
-**Suggested repository:** `ros2-mobile-robot-simulation`
+These areas support the portfolio positioning through structured training, technical documentation and applied engineering practice.
 
-### Objective
-
-Study and develop robotics applications using ROS 2, simulation tools and robotic system integration concepts.
-
-### Technical Highlights
+### ROS 2 & Robotics Training
 
 - ROS 2
-- Gazebo
-- RViz
-- URDF
 - TF
-- Python
-- Robot simulation
+- URDF
+- RViz
+- Gazebo
+- C++
+- Mobile robotics
+- Embedded prototyping
 
-### Professional Value
+### Industrial Automation Practice
 
-This project demonstrates alignment with robotics, intelligent systems and advanced mechatronics applications.
-
----
-
-## 6. Industrial Automation Studies
-
-**Type:** Engineering Studies / Automation  
-**Suggested repository:** `industrial-automation-studies`
-
-### Objective
-
-Organize studies and practical notes related to industrial automation, control systems, PLCs, networks and instrumentation.
-
-### Technical Highlights
-
-- PLC Siemens
-- PLC Rockwell
+- PLCs
+- Siemens and Rockwell platforms
 - Industrial networks
-- Modbus
-- Profibus
-- EtherNet/IP
+- PROFIBUS
+- P&ID
 - Instrumentation
-- Process control
-
-### Professional Value
-
-This project reinforces the foundation for industrial automation, manufacturing engineering and process reliability roles.
+- Control systems

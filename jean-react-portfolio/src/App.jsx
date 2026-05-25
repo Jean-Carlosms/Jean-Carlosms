@@ -1,142 +1,180 @@
-﻿import {
-  Cpu,
-  Factory,
-  Database,
-  Bot,
+import {
   BarChart3,
-  Mail,
-  ExternalLink,
-  Workflow,
-  Wrench,
-  Code2,
-  GraduationCap,
+  Bot,
   Briefcase,
   ChevronRight,
-  Sparkles,
   CircuitBoard,
-  RadioTower,
+  Code2,
+  Cpu,
+  Database,
+  ExternalLink,
+  Factory,
+  GraduationCap,
   GitBranch,
+  Mail,
+  RadioTower,
+  Sparkles,
+  Target,
+  Wrench,
 } from "lucide-react";
 import { useEffect } from "react";
 
 const projects = [
   {
-    title: "Funding Opportunities Monitor",
-    category: "Automation | Data | Decision Support",
+    title: "Robo de Fomento",
+    category: "Automation | Data Processing | Decision Support",
     description:
-      "Automation tool designed to monitor funding opportunities, collect public call data, rank relevant opportunities and generate technical summaries for decision-making.",
-    stack: ["Python", "Flask", "Web Scraping", "OCR", "Dashboards"],
+      "Python/Flask system developed to monitor innovation funding opportunities from public and institutional sources. The solution includes automated data collection, filtering, ranking, dashboard visualization and one-page report generation to support decision-making.",
+    stack: ["Python", "Flask", "Web Scraping", "Data Processing", "Ranking", "Dashboard", "Automation"],
     impact:
-      "Reduced manual monitoring effort and improved visibility for innovation and funding opportunities.",
+      "Improved visibility of innovation opportunities and structured the screening process for technical decision-making.",
   },
   {
-    title: "Project Time Allocation System",
-    category: "Governance | Project Management | Internal Systems",
+    title: "Apontamento Local",
+    category: "Governance | Internal Systems | Project Controls",
     description:
-      "Internal system concept for monthly project time allocation, approval workflows, governance, user profiles and auditability.",
-    stack: ["Node.js", "Express", "Excel", "Authentication", "Governance"],
+      "Internal web application for monthly project time allocation, approval workflows, governance controls and auditability. The system evolved from a Python prototype to a Node.js/Express architecture due to compliance and maintainability requirements.",
+    stack: ["Node.js", "Express", "Excel Persistence", "Authentication", "CSRF", "Governance", "Audit Trail"],
     impact:
-      "Improved traceability, control and auditability for project effort management.",
+      "Improved traceability and control of project effort allocation across teams and review levels.",
   },
   {
-    title: "Vehicle Traceability Dashboard",
-    category: "R&D Operations | Web Application | Traceability",
+    title: "R&D Vehicle Tracking",
+    category: "R&D Operations | Traceability | Process Digitalization",
     description:
-      "Web application concept for managing R&D vehicle reservations, chassis selection, scheduling and operational traceability.",
-    stack: ["Python", "Flask", "SQLite", "Dashboards", "Data Management"],
+      "Web application designed to manage R&D vehicle reservations, vehicle registration, chassis/model selection, user allocation and visual reservation timelines, replacing spreadsheet-based controls and manual workflows.",
+    stack: ["Flask", "Python", "Data Management", "Timeline UI", "R&D Operations", "Process Digitalization"],
     impact:
-      "Converted manual spreadsheet-based control into a structured digital engineering tool.",
+      "Converted spreadsheet-based vehicle control into a structured engineering workflow.",
   },
   {
-    title: "Computer Vision and Machine Learning",
-    category: "AI | Engineering Applications",
+    title: "Machine Learning & Computer Vision Projects",
+    category: "AI | Computer Vision | Engineering Applications",
     description:
-      "Studies involving computer vision, object detection and machine learning models applied to engineering and automation problems.",
-    stack: ["Python", "OpenCV", "YOLO", "Scikit-learn", "Machine Learning"],
+      "Applied machine learning and computer vision projects using Python, Scikit-Learn, OpenCV and YOLO, including classification, clustering, image processing, predictive analysis and model evaluation.",
+    stack: ["Python", "Scikit-Learn", "OpenCV", "YOLO", "Machine Learning", "Computer Vision"],
     impact:
-      "Built practical knowledge in applied AI, image processing and data-driven engineering.",
-  },
-  {
-    title: "ROS 2 and Robotics Studies",
-    category: "Robotics | Simulation | Systems Integration",
-    description:
-      "Robotics studies involving ROS 2, robot description, simulation, visualization and robotic systems integration.",
-    stack: ["ROS 2", "Gazebo", "RViz", "URDF", "Python"],
-    impact:
-      "Strengthened the foundation for robotics, intelligent systems and advanced mechatronics.",
-  },
-  {
-    title: "Industrial Automation Studies",
-    category: "Automation | Control | Industrial Networks",
-    description:
-      "Technical studies related to PLCs, industrial networks, instrumentation, sensors and process control.",
-    stack: ["PLC", "Siemens", "Rockwell", "Modbus", "Profibus", "EtherNet/IP"],
-    impact:
-      "Reinforced core knowledge for manufacturing, process reliability and automation engineering.",
+      "Connects data science and perception technologies to engineering and automation applications.",
   },
 ];
 
-const skills = [
+const technicalTracks = [
   {
-    icon: Factory,
-    title: "Manufacturing Engineering",
-    items: ["Lean Manufacturing", "Process Improvement", "BOM", "MS Project", "Problem Solving"],
+    title: "ROS 2 & Robotics Training",
+    description:
+      "Structured technical practice with ROS 2, TF, URDF, RViz, Gazebo, C++ foundations, sensors and mobile robotics topics.",
+    stack: ["ROS 2", "TF", "URDF", "RViz", "Gazebo", "C++", "Mobile Robotics"],
   },
   {
+    title: "Industrial Automation Practice",
+    description:
+      "Practical training and documentation involving PLCs, Siemens, Rockwell, industrial networks, PROFIBUS, P&ID, instrumentation and control systems.",
+    stack: ["PLC", "Siemens", "Rockwell", "PROFIBUS", "P&ID", "Instrumentation", "Control Systems"],
+  },
+];
+
+const expertise = [
+  {
     icon: Cpu,
-    title: "Industrial Automation",
-    items: ["PLC Siemens", "PLC Rockwell", "TIA Portal", "Industrial Networks", "Instrumentation"],
+    title: "Automation & Industrial Systems",
+    items: ["PLC", "Siemens", "Rockwell", "Industrial networks", "P&ID", "Instrumentation", "Control systems"],
+  },
+  {
+    icon: Factory,
+    title: "Manufacturing & Process Improvement",
+    items: ["Manufacturing operations", "Process digitalization", "Traceability", "Lean Manufacturing", "Operational workflows"],
   },
   {
     icon: Database,
-    title: "Data & Digital Tools",
-    items: ["Python", "SQL", "Power BI", "Power Apps", "Power Automate"],
+    title: "Data & Software Engineering",
+    items: ["Python", "Flask", "Node.js", "React", "Power BI", "Power Apps", "Power Automate", "SQL"],
   },
   {
     icon: Bot,
-    title: "Robotics & AI",
-    items: ["ROS 2", "OpenCV", "YOLO", "Machine Learning", "Gazebo"],
+    title: "Robotics & Intelligent Systems",
+    items: ["ROS 2", "C++", "Raspberry Pi", "Arduino", "ESP32", "Sensors", "Mobile robotics"],
+  },
+  {
+    icon: Briefcase,
+    title: "Project Management & Governance",
+    items: ["Project planning", "Technical documentation", "Governance controls", "Approval workflows", "Auditability"],
   },
 ];
 
 const timeline = [
   {
     year: "2025 - Present",
-    role: "Research Fellow | IEL - Hyundai Motor Brasil",
+    role: "Research Fellow | IEL / Automotive R&D Environment",
     text:
-      "Automation and data management initiatives for innovation and development of new products and concepts in automotive R&D.",
+      "Working in an automotive R&D environment on innovation projects, data automation, process digitalization and decision-support dashboards, with focus on internal tools that improve traceability and technical workflows.",
   },
   {
     year: "2023 - 2024",
     role: "Project Engineer | FF Equipamentos",
     text:
-      "Engineering projects, BOM creation, manufacturing support, technical documentation and project planning.",
+      "Worked on engineering projects involving 3D modeling, BOM preparation, technical documentation, project supervision, manufacturing support and process improvement.",
   },
   {
-    year: "2020 - 2021",
-    role: "Engineering Assistant | Acom Energy",
+    year: "Previous Experience",
+    role: "Construction and Agricultural Machinery Sector",
     text:
-      "Commissioning tests, frequency inverter configuration, technical reports and support for industrial electrical systems.",
+      "Built hands-on experience supporting technical understanding of industrial equipment, maintenance routines and manufacturing environments.",
   },
   {
-    year: "2011 - 2018",
-    role: "Mechatronics Engineering | Facens",
+    year: "Academic Foundation",
+    role: "Mechatronics Engineering | FACENS",
     text:
-      "Engineering foundation in mechanics, electronics, automation, control systems and systems integration.",
+      "Developed a multidisciplinary foundation in mechanics, electronics, automation, control systems, software and systems integration.",
+  },
+];
+
+const certificationGroups = [
+  {
+    title: "Robotics & Embedded Systems",
+    items: [
+      "ROS 2, TF, URDF, RViz and Gazebo",
+      "Robot Operating System fundamentals",
+      "Raspberry Pi, Arduino and embedded prototyping",
+      "Beginning C++ Programming",
+    ],
+  },
+  {
+    title: "Industrial Automation",
+    items: [
+      "Siemens S7-1200 PLC",
+      "Siemens TIA Portal with Factory I/O",
+      "Rockwell PLC and HMI Programming",
+      "Industrial networks and PROFIBUS PA",
+      "P&ID Reading and Understanding",
+      "EPLAN Electric P8",
+    ],
+  },
+  {
+    title: "Data, AI & Software",
+    items: [
+      "Python Programming",
+      "Process Control with Python",
+      "Power BI, Power Apps and Power Automate",
+      "SQL and Database Fundamentals",
+      "Flask Web Development",
+      "Machine Learning with Python",
+      "Computer Vision with OpenCV",
+      "Statistics with Python",
+    ],
   },
 ];
 
 const signals = [
   { label: "Automation", value: "PLC + IIoT", icon: RadioTower },
-  { label: "Data Flow", value: "Python + SQL", icon: Database },
+  { label: "Data Solutions", value: "Python + SQL", icon: Database },
   { label: "Robotics", value: "ROS 2", icon: Bot },
-  { label: "Systems", value: "Dashboards", icon: CircuitBoard },
+  { label: "Digital Tools", value: "Dashboards", icon: CircuitBoard },
 ];
 
 const highlights = [
-  { value: "06+", label: "portfolio directions" },
-  { value: "05", label: "engineering domains" },
-  { value: "24/7", label: "automation mindset" },
+  { value: "Automation", label: "industrial systems" },
+  { value: "Data", label: "engineering analytics" },
+  { value: "Robotics", label: "intelligent systems" },
 ];
 
 function Badge({ children }) {
@@ -192,9 +230,10 @@ function App() {
           </div>
 
           <div className="nav-links">
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#timeline">Timeline</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#timeline">Experience</a>
             <a href="#contact">Contact</a>
           </div>
         </nav>
@@ -203,18 +242,17 @@ function App() {
           <div className="hero-content">
             <div className="hero-kicker">
               <Sparkles size={18} />
-              Industrial Automation &bull; IIoT &bull; Robotics &bull; Manufacturing
+              Industrial Automation &bull; Manufacturing &bull; IIoT &bull; Robotics
             </div>
 
             <h1>
-              Engineering solutions at the intersection of automation, data and
-              intelligent systems.
+              Mechatronics Engineer focused on industrial automation, manufacturing digitalization, data solutions, IIoT and robotics.
             </h1>
 
             <p>
-              I am a Mechatronics Engineer focused on industrial automation,
-              data-driven engineering, IIoT, robotics, process improvement and
-              digital tools for manufacturing and R&D environments.
+              I build practical engineering solutions that connect hardware, software,
+              data and industrial operations to improve traceability, decision-making
+              and operational efficiency.
             </p>
 
             <div className="hero-actions">
@@ -229,18 +267,30 @@ function App() {
               >
                 LinkedIn <ExternalLink size={16} />
               </a>
+              <a
+                className="btn secondary"
+                href="https://github.com/Jean-Carlosms"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub <GitBranch size={16} />
+              </a>
+              <a className="btn secondary" href="mailto:jean-carlosms@hotmail.com">
+                Email <Mail size={16} />
+              </a>
             </div>
 
             <div className="badge-row">
               <Badge>Python</Badge>
+              <Badge>Node.js</Badge>
+              <Badge>React</Badge>
               <Badge>Power Platform</Badge>
               <Badge>PLC</Badge>
               <Badge>ROS 2</Badge>
               <Badge>IIoT</Badge>
-              <Badge>Data Acquisition</Badge>
             </div>
 
-            <div className="hero-stats" aria-label="Portfolio highlights">
+            <div className="hero-stats" aria-label="Professional focus areas">
               {highlights.map((item) => (
                 <div className="stat" key={item.label}>
                   <strong>{item.value}</strong>
@@ -257,10 +307,10 @@ function App() {
               <span></span>
               <span></span>
             </div>
-            <h3>Professional Positioning</h3>
+            <h3>Target Roles</h3>
             <p>
-              Manufacturing Engineer &bull; Automation Engineer &bull; Industrial Data &bull;
-              R&D &bull; IIoT &bull; Robotics
+              Manufacturing Engineer &bull; Automation Engineer &bull; Data/Automation
+              Engineer &bull; Robotics Engineer &bull; Industrial Digitalization Engineer
             </p>
 
             <div className="signal-list">
@@ -286,11 +336,11 @@ function App() {
                 <span>Python, SQL, dashboards</span>
               </div>
               <div>
-                <strong>Systems</strong>
-                <span>Flask, Node.js, tools</span>
+                <strong>Software</strong>
+                <span>Flask, Node.js, React</span>
               </div>
               <div>
-                <strong>Engineering</strong>
+                <strong>Manufacturing</strong>
                 <span>Projects, BOM, Lean</span>
               </div>
             </div>
@@ -300,47 +350,69 @@ function App() {
 
       <section className="section" id="about">
         <SectionTitle
-          eyebrow="About"
-          title="Mechatronics profile with practical industrial application"
-          description="My portfolio connects engineering, automation, software and data to solve real problems in industrial and R&D environments."
+          eyebrow="About Me"
+          title="Engineering profile connecting hardware, software, data and operations"
+          description="A multidisciplinary profile built around practical engineering systems for industrial and R&D environments."
         />
 
-        <div className="about-grid">
-          <div className="about-card reveal">
-            <Wrench size={26} />
-            <h3>Engineering Background</h3>
+        <div className="about-layout">
+          <article className="about-narrative reveal">
             <p>
-              Experience with engineering projects, mechanical design,
-              manufacturing documentation, industrial equipment and technical
-              problem solving.
+              I am a Mechatronics Engineer with a multidisciplinary background in
+              industrial automation, data science, project management and
+              engineering systems. My work focuses on building practical solutions
+              that connect hardware, software, data and industrial operations.
             </p>
-          </div>
+            <p>
+              I have experience developing internal tools, dashboards, automation
+              systems and process digitalization projects using Python, Node.js,
+              React, Power Platform and industrial technologies. My professional
+              direction is centered on automation, manufacturing, IIoT, robotics
+              and intelligent systems.
+            </p>
+            <p>
+              I also maintain a strong self-directed learning routine in automation,
+              robotics, control systems, electronics, data science and software
+              engineering, applying this knowledge in practical engineering projects.
+            </p>
+          </article>
 
-          <div className="about-card reveal">
-            <Workflow size={26} />
-            <h3>Automation Mindset</h3>
-            <p>
-              Strong interest in integrating hardware, software, industrial
-              networks and data acquisition to improve process reliability.
-            </p>
-          </div>
+          <div className="about-grid">
+            <div className="about-card reveal">
+              <Wrench size={26} />
+              <h3>Engineering Systems</h3>
+              <p>
+                Integrated work with technical documentation, manufacturing support,
+                process improvement, traceability and engineering workflows.
+              </p>
+            </div>
 
-          <div className="about-card reveal">
-            <Code2 size={26} />
-            <h3>Digital Tools</h3>
-            <p>
-              Development of internal tools using Python, Flask, Node.js, Power
-              Platform, dashboards and structured data workflows.
-            </p>
+            <div className="about-card reveal">
+              <RadioTower size={26} />
+              <h3>Industrial Automation</h3>
+              <p>
+                Practical focus on PLCs, industrial networks, sensors, IIoT,
+                instrumentation and control systems for industrial environments.
+              </p>
+            </div>
+
+            <div className="about-card reveal">
+              <Code2 size={26} />
+              <h3>Applied Software</h3>
+              <p>
+                Built internal tools, dashboards and data workflows using Python,
+                Flask, Node.js, React, SQL and Microsoft Power Platform.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section dark" id="projects">
         <SectionTitle
-          eyebrow="Featured Projects"
-          title="Projects that represent my engineering portfolio"
-          description="These projects show practical applications of automation, data, systems integration, governance and robotics."
+          eyebrow="Selected Projects"
+          title="Engineering projects focused on automation, data and operations"
+          description="Projects selected to show practical applications of software, automation, traceability, analytics and manufacturing digitalization."
         />
 
         <div className="projects-grid">
@@ -372,15 +444,41 @@ function App() {
         </div>
       </section>
 
-      <section className="section" id="skills">
+      <section className="section dark compact-section" id="technical-tracks">
         <SectionTitle
-          eyebrow="Core Skills"
-          title="Technical stack aligned with modern industrial engineering"
-          description="The focus is not only coding, but using technology to improve engineering processes and manufacturing systems."
+          eyebrow="Technical Practice"
+          title="Focused development in robotics and industrial automation"
+          description="These areas reinforce the portfolio positioning through structured training, technical documentation and applied engineering practice."
         />
 
-        <div className="skills-grid">
-          {skills.map((skill, index) => {
+        <div className="technical-track-grid">
+          {technicalTracks.map((track, index) => (
+            <article
+              className="technical-track-card reveal"
+              key={track.title}
+              style={{ "--delay": `${index * 90}ms` }}
+            >
+              <h3>{track.title}</h3>
+              <p>{track.description}</p>
+              <div className="stack">
+                {track.stack.map((item) => (
+                  <Badge key={item}>{item}</Badge>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section" id="expertise">
+        <SectionTitle
+          eyebrow="Core Expertise"
+          title="Technical capabilities aligned with industrial digitalization"
+          description="A combination of automation, manufacturing, software, data, robotics and governance for practical engineering work."
+        />
+
+        <div className="skills-grid expertise-grid">
+          {expertise.map((skill, index) => {
             const Icon = skill.icon;
             return (
               <div
@@ -403,16 +501,16 @@ function App() {
 
       <section className="section dark" id="timeline">
         <SectionTitle
-          eyebrow="Timeline"
-          title="Professional and academic trajectory"
-          description="A career path built around mechatronics, automation, project engineering, data and intelligent systems."
+          eyebrow="Experience"
+          title="Professional path across engineering, automation and R&D"
+          description="Experience focused on practical tools, manufacturing support, project engineering and technical problem solving."
         />
 
         <div className="timeline">
           {timeline.map((item, index) => (
             <div
               className="timeline-item reveal"
-              key={item.year}
+              key={`${item.year}-${item.role}`}
               style={{ "--delay": `${index * 90}ms` }}
             >
               <div className="timeline-year">{item.year}</div>
@@ -428,7 +526,7 @@ function App() {
       <section className="section" id="education">
         <SectionTitle
           eyebrow="Education"
-          title="Continuous development in engineering, data and management"
+          title="Academic background in mechatronics, automation, data and management"
         />
 
         <div className="education-grid">
@@ -436,23 +534,55 @@ function App() {
             <GraduationCap size={28} />
             <h3>Academic Background</h3>
             <ul>
-              <li>MBA in Project Management - USP/Esalq</li>
-              <li>Postgraduate Degree in Data Science - Facens</li>
-              <li>Postgraduate Degree in Industrial Automation Engineering - Facens</li>
+              <li>B.Eng. in Mechatronics Engineering - FACENS</li>
+              <li>Postgraduate Degree in Industrial Automation Engineering - FACENS</li>
+              <li>Postgraduate Degree in Data Science - FACENS</li>
+              <li>MBA in Project Management - USP/ESALQ (ongoing)</li>
               <li>Postgraduate Degree in Tax Audit - Gran Faculdade</li>
-              <li>Bachelor's Degree in Mechatronics Engineering - Facens</li>
             </ul>
           </div>
 
           <div className="education-card reveal">
-            <Briefcase size={28} />
-            <h3>Career Direction</h3>
+            <Target size={28} />
+            <h3>Current Direction</h3>
             <p>
-              My current direction is to grow in manufacturing engineering,
-              industrial automation, robotics, IIoT, R&D and data-driven
-              engineering roles.
+              Currently focused on industrial automation, robotics, intelligent
+              systems, data-driven engineering and digital transformation in
+              manufacturing environments. My long-term goal is to combine
+              mechatronics, robotics, AI and industrial systems to build practical
+              automation and intelligent engineering solutions.
+            </p>
+            <p>
+              Preparing for graduate-level research in Automation and Robotics,
+              with interest in mobile robotics, reinforcement learning, ROS 2,
+              control systems and intelligent manufacturing.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section dark" id="certifications">
+        <SectionTitle
+          eyebrow="Selected Certifications & Training"
+          title="Continuous technical development in automation, robotics and data"
+          description="Training areas selected to support technical work in industrial automation, embedded systems, robotics, data science and applied software."
+        />
+
+        <div className="cert-grid">
+          {certificationGroups.map((group, index) => (
+            <article
+              className="cert-card reveal"
+              key={group.title}
+              style={{ "--delay": `${index * 90}ms` }}
+            >
+              <h3>{group.title}</h3>
+              <ul>
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -460,8 +590,9 @@ function App() {
         <div>
           <h2>Let's connect</h2>
           <p>
-            Open to opportunities in Manufacturing Engineering, Automation,
-            Industrial Data, R&D, IIoT, Robotics and Engineering Systems.
+            Open to opportunities as Manufacturing Engineer, Automation Engineer,
+            Data/Automation Engineer, Robotics Engineer and Industrial
+            Digitalization Engineer.
           </p>
         </div>
 
@@ -482,4 +613,3 @@ function App() {
 }
 
 export default App;
-

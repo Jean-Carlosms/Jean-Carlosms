@@ -504,11 +504,40 @@ main {
 .about-grid,
 .skills-grid,
 .education-grid,
-.projects-grid {
+.projects-grid,
+.cert-grid,
+.technical-track-grid {
   max-width: 1180px;
   margin: 0 auto;
   display: grid;
   gap: 18px;
+}
+
+.about-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.about-narrative {
+  background: white;
+  border: 1px solid #dce6e1;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 22px 60px rgba(7, 17, 15, 0.08);
+}
+
+.about-narrative p {
+  max-width: 980px;
+  color: #34443f;
+  line-height: 1.75;
+  font-size: 18px;
+  margin: 0;
+}
+
+.about-narrative p + p {
+  margin-top: 18px;
 }
 
 .about-grid {
@@ -517,7 +546,8 @@ main {
 
 .about-card,
 .skill-card,
-.education-card {
+.education-card,
+.cert-card {
   background: white;
   border: 1px solid #dce6e1;
   border-radius: 8px;
@@ -528,7 +558,8 @@ main {
 
 .about-card:hover,
 .skill-card:hover,
-.education-card:hover {
+.education-card:hover,
+.cert-card:hover {
   transform: translateY(-4px);
   border-color: rgba(15, 140, 119, 0.32);
   box-shadow: 0 28px 70px rgba(7, 17, 15, 0.13);
@@ -571,6 +602,31 @@ main {
   position: relative;
   overflow: hidden;
   transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.technical-track-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.technical-track-card {
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(12, 32, 28, 0.84), rgba(9, 24, 20, 0.66)),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.04) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
+  border-radius: 8px;
+  padding: 28px;
+}
+
+.technical-track-card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.technical-track-card p {
+  color: #cfe2db;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .project-card::before {
@@ -625,9 +681,46 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.expertise-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .skill-card ul,
-.education-card ul {
+.education-card ul,
+.cert-card ul {
   padding-left: 18px;
+}
+
+.education-card p {
+  margin-bottom: 0;
+}
+
+.education-card p + p {
+  margin-top: 18px;
+}
+
+.cert-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cert-card {
+  background:
+    linear-gradient(180deg, rgba(12, 32, 28, 0.86), rgba(9, 24, 20, 0.68)),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.04) 1px, transparent 1px);
+  background-size: auto, 28px 28px;
+  border-color: var(--line);
+  color: #f7fbf7;
+}
+
+.cert-card h3 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.cert-card li {
+  color: #cfe2db;
+  line-height: 1.65;
+  margin-bottom: 8px;
 }
 
 .timeline {
@@ -827,7 +920,9 @@ main {
     font-size: 3.6rem;
   }
 
-  .skills-grid {
+  .skills-grid,
+  .expertise-grid,
+  .cert-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -840,7 +935,9 @@ main {
   .hero-grid,
   .about-grid,
   .projects-grid,
-  .education-grid {
+  .education-grid,
+  .cert-grid,
+  .technical-track-grid {
     grid-template-columns: 1fr;
   }
 
@@ -880,8 +977,19 @@ main {
 
   .hero-stats,
   .skills-grid,
+  .expertise-grid,
   .metric-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-narrative,
+  .about-card,
+  .skill-card,
+  .education-card,
+  .cert-card,
+  .project-card,
+  .technical-track-card {
+    padding: 22px;
   }
 
   .hero-actions {
