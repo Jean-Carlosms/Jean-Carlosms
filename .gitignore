@@ -38,3 +38,4 @@ Thumbs.db
 *.pem
 secrets/
 credentials/
+jean-react-portfolio/dist/
